@@ -22,17 +22,12 @@
 4. Click the **Next: Review + Create** button
 5. Click the **Create** button
 
-## Step 2: Create a App Service Plan
-1. In the Azure Portal, search for **App Service Plan**
-2. Click on the **Create** button
-3. Fill out the **Basics** tab as follows:
-- **Subscription:** Choose your subscription
-- **Resource group:** Select the Resource Group you created for this lab
-- **Region:** East US
-- **App Service Name:** Choose a unique name for the App Service
-- **Pricing tier:** Standard
+## Step 2: Add workflow steps into your Logic APp
+1. Take meta data code from the repository and paste/save
+2. Go back to the designer and make sure you see the following steps
 
-![App Service Basic Tab](images/app-service-create.JPG)
+
+![App Service Basic Tab](images/GenSchema_LogicApp.JPG)
 
 4. Click the **Review + create** button
 
