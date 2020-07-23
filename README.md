@@ -47,7 +47,8 @@
 4. You are now in a state to run this logic app and describe any RFC action's request/response objects 
 
 
-## Step 3: Let's try a simple SAP action
+## Step 3: Let's try and describe a simple SAP action
+
 1. Go to POSTMAN, add correct JSON Content-Type and in the payload add the sapaction action attribute
 2. Please make sure you fill rest of the fields. The URI is available from the HttpTrigger step of the Logic App
 3. Here is my POSTMAN screen shot as input
@@ -57,14 +58,14 @@
 
 4. Click the **Send** button
 5. You should see schema definitions as response
-6. I have added -------- as a delimiter between the RFC xsd and the TYPES xsd. So you will need o extract them as separate files on our local system
+6. I have added -------- as a delimiter between the RFC xsd and the TYPES xsd. So you will need to extract them as separate files on your local system
+
 7. Here is my POSTMAN screen shot as output
 
 ![App Service Basic Tab](images/GenSchema_Output_1.JPG)
 
-5. Click the **Create** button
+5. Collect the sample xsd's from the response tab of the Postman. This is an important step. Make sure it works!!
 
-6. If you see this okay, we are goos so far
 
 
 
