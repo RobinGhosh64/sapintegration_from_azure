@@ -17,7 +17,7 @@
 - **Resource group:** Provide a unique name like **ata-webapp-username-rg**
 - **Region:** EastUS
 
-![RG Basic Tab](images/app-service-create-resource-group.JPG)  
+![RG Basic Tab](images/create_logic_app.JPG)  
 
 4. Click the **Next: Review + Create** button
 5. Click the **Create** button
