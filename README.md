@@ -1,23 +1,23 @@
-# Azure WebApps Lab
+# Azure SAP Integration Lab
 
 ## Prerequisites
 
 - Microsoft Azure subscription
 - Resource Group to deploy Azure services
 - Permissions to create the following resource  
-    - 
-    - Blob Storage
+    - Data Gateway Installed on Customer's On Prem with the correct .NET libraries
+    - Logic App
 
 
-## Step 1: Create a Resource Group
-1. In the Azure Portal, search for **Resource Groups**
+## Step 1: Create a Logic App that can describe input/output objects (request/response) to run any SAP RFC action
+1. In the Azure Portal, search for **Logic App**
 2. Click on the **Add** button
 3. Fill out the **Basics** tab as follows:
 - **Subscription:** Choose your subscription
 - **Resource group:** Provide a unique name like **ata-webapp-username-rg**
 - **Region:** EastUS
 
-![RG Basic Tab](images/app-service-create-resource-group.JPG)  
+![RG Basic Tab](images/create_logic_app.JPG)  
 
 4. Click the **Next: Review + Create** button
 5. Click the **Create** button
