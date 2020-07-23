@@ -1,4 +1,4 @@
-# Azure WebApps Lab
+# Azure SAP Integration Lab
 
 ## Prerequisites
 
@@ -9,8 +9,8 @@
     - Logic App
 
 
-## Step 1: Create a Logic App that can describe and generate XSD to describe the input and outout responses for any SRFC action
-1. In the Azure Portal, search for **Resource Groups**
+## Step 1: Create a Logic App that can describe input/output objects (request/response) to run any SAP RFC action
+1. In the Azure Portal, search for **Logic App**
 2. Click on the **Add** button
 3. Fill out the **Basics** tab as follows:
 - **Subscription:** Choose your subscription
