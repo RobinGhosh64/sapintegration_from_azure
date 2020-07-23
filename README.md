@@ -37,21 +37,34 @@
 4. Click the **Next: Review + Create** button
 5. Click the **Create** button
 
-## Step 2: Add workflow steps into your Logic APp
-1. Take meta data code from the repository and paste/save
-2. Go back to the designer and make sure you see the following steps
+## Step 2: Add workflow steps into your Logic App
+1. Take meta data code from the repository and then copy-paste and save
+2. When you save you will need to create a connection to your SAP instance if you have not done so
+3. Go back to the designer and make sure you see the following steps
 
 ![App Service Basic Tab](images/GenSchema_LogicApp.JPG)
 
-![App Service Basic Tab](images/GenSchema_Input_1.JPG)
+4. You are now in a state to run this logic app and describe any RFC action's request/response objects 
 
-4. Click the **Review + create** button
+
+## Step 3: Let's try a simple SAP action
+1. Go to POSTMAN, add correct JSON Content-Type and in the payload add the sapaction action attribute
+2. Please make sure you fill rest of the fields. The URI is available from the HttpTrigger step of the Logic App
+3. Here is my POSTMAN screen shot as input
+
+
+![App_Service_Basic_Tab](images/GenSchema_Input_1.JPG)
+
+4. Click the **Send** button
+5. You should see schema definitions as response
+6. I have added -------- as a delimiter between the RFC xsd and the TYPES xsd. So you will need o extract them as separate files on our local system
+7. Here is my POSTMAN screen shot as output
 
 ![App Service Basic Tab](images/GenSchema_Output_1.JPG)
 
 5. Click the **Create** button
 
-6. You now ended up creating a App Service Plan. One App Service Plan can hold many App Services/Web Services and Apps.
+6. If you see this okay, we are goos so far
 
 
 
