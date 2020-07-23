@@ -10,9 +10,10 @@
 
 ## General steps to integrate and call any SAP remote function call
 
-1. SAP connector/adaptor is the gateway to the target SAP system. So before we make any SAP RFC call we need to pass in the correct request and response objects
-<BR>
+1. SAP connector/adaptor is the gateway to the target SAP system. So before we make any SAP RFC call we need to pass in the correct request and response objects.
+
    I.E. We need to confirm to a spec and provided the exact XML otherwise the adaptor will reject it and not send it over to the target SAP instance
+   
 2. It is the job of the SAP adaptor(driver) to know these objects and it will tell you the meta data (external schema definition:- XSD) if you ask him to describe it.
 3. This describe feature can be called when you specifically call **Generate Schemas** action in the adaptor which is exposed as an API, just like **Send BAPI message **
 4. You will need to pass in the SAP RFC action name
