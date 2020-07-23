@@ -5,11 +5,11 @@
 - Microsoft Azure subscription
 - Resource Group to deploy Azure services
 - Permissions to create the following resource  
-    - 
-    - Blob Storage
+    - Data Gateway Installed on Customer's On Prem with the correct .NET libraries
+    - Logic App
 
 
-## Step 1: Create a Resource Group
+## Step 1: Create a Logic App that can describe and generate XSD to describe the input and outout responses for any SRFC action
 1. In the Azure Portal, search for **Resource Groups**
 2. Click on the **Add** button
 3. Fill out the **Basics** tab as follows:
