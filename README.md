@@ -57,67 +57,78 @@
 ![App_Service_Basic_Tab](images/GenSchema_Input_1.JPG)
 
 4. Click the **Send** button
-5. You should see schema definitions as response
+5. You should see schema definitions coming back as response from this Logic APp.
 6. I have added -------- as a delimiter between the RFC xsd and the TYPES xsd. So you will need to extract them as separate files on your local system
-
+7. Also the RFC xsd file does an import of the TYPES xsd, so make sure the name is entered correctly to tie both of them. Otherwise, it will say 'undefined import'
 7. Here is my POSTMAN screen shot as output
 
 ![App Service Basic Tab](images/GenSchema_Output_1.JPG)
 
-5. Collect the sample xsd's from the response tab of the Postman. This is an important step. Make sure it works!!
+5. Collect the sample xsd's from the response tab of the Postman. This is an important step. Make sure you get a 200 OK and the XSD data
 
 
 
 ## Step 4: Now that we have the two XSD's, let us create a xml payload
 
 1. Please use any tool like XMLSpy or Liquid Studio
-2. Load the two files are generate the XML payload
-3. Here is my screen shot using the two xsd's
+2. Load the two files in your studio and make sure the references betyween each other is satisfiled.
+3. Make sure you select the root entry of the XML correctly.
+4. Here is my screen shot using the two xsd's. I have selected the  SCL_MDM_API_CREATE_MAT as the root
 
 
 ![App_Service_Basic_Tab](images/Liquid_Select_Root_element.JPG)
 
-4. Click the **Send** button
-5. You should see schema definitions as response
-6. I have added -------- as a delimiter between the RFC xsd and the TYPES xsd. So you will need to extract them as separate files on your local system
-
-7. Here is my POSTMAN screen shot as output
+5. Then I click on the Tool option.
+7. Here is my screen shot 
 
 ![App Service Basic Tab](images/Liquid_Select_Tool.JPG)
 
-5. Collect the sample xsd's from the response tab of the Postman. This is an important step. Make sure it works!!
-
+8. Then click on 'Generate Sample XML from the XSD' option
+9. Here is my screen shot
 
 ![App Service Basic Tab](images/Liquid_Select_Tool_1.JPG)
 
+10. Then click 'Finish'
 
-
-7. Here is my POSTMAN screen shot as output
-
-![App Service Basic Tab](images/Material_Not_OK.JPG)
-
-5. Collect the sample xsd's from the response tab of the Postman. This is an important step. Make sure it works!!
-
+This will generate sample XML that can be used as a payload
 
 ![App Service Basic Tab](images/Material_OK.JPG)
 
 
 
-## Step 7: Our App Service has restarted. Hopefully, taken the settings update. Let's go to our Web App
 
-1. Go back to you App Service by selecting the **Overview** on the left blade
+## Step 5: Create a actual Logic App that can execute and exercise the entire Integration Flow into your SAP system.
 
-![RG Basic Tab](images/app-service-overview.JPG)
+1. Go back to you list of Logic Apps and then create a new Logic App that will actually be calling the SAP RFC Function.
+    We do have the sample payload from earlier steps.
 
-2. Click on **URL**
+2. It is ok to create this Logic App as an Http Trigger
 
-![RG Basic Tab](images/app-service-deployment-happy.JPG)
+3. You can maybe have a step an extra step to convert from JSON to XML as the first step.
 
-3. Make sure you web applications renders and shows the connected message in your Web App.
+4. Then add the important step. Choose SAP action as 'SAP Send Message'. When it prompts for action, force yourself and add action as the same
+as the action you wanted the SAP connector to describe.
 
-**Blob Storage: Success**
+5. In our case it is 'http://Microsoft.LobServices.Sap/2007/03/Rfc/_x002F_SCL_x002F_MDM_API_CREATE_MAT'
+
+6. When it prompts for input, you the xml payload as input.
+
+7. Add another step use Http Response and add the response from the SAP Send message step as input to be returned to the caller.
+
+8. Verify it works and you should get passed validation.
+
+9. Make sure the see the message on the SAP side to confirm.
+
+10. we shouuld see **Material object: Added**
 
   CONGRATULATIONS. Great job you have finished the LAB successfully!
 
 
+
+
+## Step 5: Problems seen from our CONA integration
+
+7. Here is my POSTMAN screen shot as output
+
+![App Service Basic Tab](images/Material_Not_OK.JPG)
 
