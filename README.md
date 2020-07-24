@@ -127,10 +127,11 @@ action that you wanted the SAP connector to describe.
 
 
 
-## Step 5: Problems seen from our CONA integration
+## Step 6: Some corner case concerns noticed with the SAP adaptor
 
-Some of the custom RFC methods implemented by CONA shows one to many relationships on their side.
-Our SAP adapter describe does not catch the cardinality ( ONE TO MANY). In this situation, our XSD does not show ArrayOf <BAPI list Objects>
+Standard SAP RFC functions when taken for implementation have no issues, using this approach.
+However, when some RFC actions have custom logic and custom mapping using 1 to many tables we have seen some gaps in the XSD generation
+Our SAP adapter describe seems to have not caught the cardinality ( ONE TO MANY). In this situation, our XSD does not show ArrayOf <BAPI list Objects>
     
 
 
@@ -153,24 +154,32 @@ Our SAP adapter describe does not catch the cardinality ( ONE TO MANY). In this 
 
 
 
-1. The XSD's does show an ArrayOf TELE_MOB (no ArrayOf at all)
+3. The XSD's does show an ArrayOf TELE_MOB (no ArrayOf at all)
 
 ![App Service Basic Tab](images/Create-Customer-XSD.JPG)
 
 
-2. The XML we presented to the system has not worked!!
+4. The XML we presented to the system has not worked!!
 
 
 ![App Service Basic Tab](images/Create-Customer-XML.JPG)
 
 
 
-3. The XML send via POSTMAN has not worked!!
+5. The XML send via POSTMAN has not worked!!
 
 
 ![App Service Basic Tab](images/FAILS_ON_T_COUNTRY.JPG)
 
 
+6. Also LOOKUP OF A CUSTOMER via ID gives a TELE_MOB table to string conversion error. The XML we post only has KUNNR field as input.
+
+
+
+7. BBP_RFC_READ_TABLE with specific return fields works as a alternative, but customer wants to see all fields
+
+
+![App Service Basic Tab](images/BBP_RFC_READ_TABLE.JPG)
 
 
 Working with internal SAP team now.
