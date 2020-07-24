@@ -129,7 +129,31 @@ action that you wanted the SAP connector to describe.
 
 ## Step 5: Problems seen from our CONA integration
 
-1. 
+Some of the custom RFC methods implemented by CONA shows one to many relationships on their side.
+Our SAP adapter describe does not catch the cardinality ( ONE TO MANY). In this situation, our XSD does not show ArrayOf <BAPI list Objects>
+    
+
+
+**_x002F_SCL_x002F_BAPI_SORD_CREATEFROMDAT2 ** has worked **
+
+1. The XSD's does have a ArrayOf BAPISITDM
+
+![App Service Basic Tab](images/Create-Order-XML.JPG)
+
+
+2. The XML we presented to the system has worked
+
+
+![App Service Basic Tab](images/Create-Order-XSD.JPG)
+
+
+
+
+
+Apps and then create a new Logic App that will actually be calling the SAP RFC Function.
+    We do have the sample payload from the earlier steps.
+
+2. It 
 
 ![App Service Basic Tab](images/Material_Not_OK.JPG)
 
