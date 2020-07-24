@@ -154,7 +154,7 @@ Our SAP adapter describe seems to have not caught the cardinality ( ONE TO MANY)
 
 
 
-3. The XSD's does show an ArrayOf TELE_MOB (no ArrayOf at all)
+3. The XSD's does not show an ArrayOf TELE_MOB (no ArrayOf at all)
 
 ![App Service Basic Tab](images/Create-Customer-XSD.JPG)
 
