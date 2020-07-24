@@ -149,19 +149,19 @@ Our SAP adapter describe does not catch the cardinality ( ONE TO MANY). In this 
 
 
 
-**_x002F_SCL_x002F_BAPI_SORD_CREATEFROMDAT2** has not worked 
+**_x002F_SCL_x002F_MDM_API_CREATE_CUST** has not worked 
 
 
 
-1. The XSD's does show an ArrayOf BAPISITDM
+1. The XSD's does show an ArrayOf TELE_MOB (no ArrayOf at all)
 
-![App Service Basic Tab](images/Create-Order-XSD.JPG)
-
-
-2. The XML we presented to the system has worked
+![App Service Basic Tab](images/Create-Customer-XSD.JPG)
 
 
-![App Service Basic Tab](images/Create-Order-XML.JPG)
+2. The XML we presented to the system has not worked!!
+
+
+![App Service Basic Tab](images/Create-Customer-XML.JPG)
 
 
 
