@@ -165,5 +165,13 @@ Our SAP adapter describe does not catch the cardinality ( ONE TO MANY). In this 
 
 
 
+3. The XML send via POSTMAN has not worked!!
+
+
+![App Service Basic Tab](images/FAILS_ON_T_COUNTRY.JPG)
+
+
+
+
 Working with internal SAP team now.
 
