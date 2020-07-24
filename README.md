@@ -99,27 +99,28 @@ This will generate sample XML that can be used as a payload
 
 ## Step 5: Create a actual Logic App that can execute and exercise the entire Integration Flow into your SAP system.
 
-1. Go back to you list of Logic Apps and then create a new Logic App that will actually be calling the SAP RFC Function.
-    We do have the sample payload from earlier steps.
+1. Go back to your list of Logic Apps and then create a new Logic App that will actually be calling the SAP RFC Function.
+    We do have the sample payload from the earlier steps.
 
 2. It is ok to create this Logic App as an Http Trigger
 
 3. You can maybe have a step an extra step to convert from JSON to XML as the first step.
 
-4. Then add the important step. Choose SAP action as 'SAP Send Message'. When it prompts for action, force yourself and add action as the same
-as the action you wanted the SAP connector to describe.
+4. Then add the important step. Choose SAP action as 'SAP Send Message'. When it prompts for action, force yourself and add SAP action not via drop-downs but by forcing and typing in the same
+action that you wanted the SAP connector to describe.
 
 5. In our case it is 'http://Microsoft.LobServices.Sap/2007/03/Rfc/_x002F_SCL_x002F_MDM_API_CREATE_MAT'
 
-6. When it prompts for input, you the xml payload as input.
+6. When it prompts for input, you can enter the entire xml payload from before
 
-7. Add another step use Http Response and add the response from the SAP Send message step as input to be returned to the caller.
+7. Add another step to use Http Response and add the response from the SAP Send message step as input to be returned to the caller.
+   Return body response is what you want to see return.
 
 8. Verify it works and you should get passed validation.
 
-9. Make sure the see the message on the SAP side to confirm.
+9. Make sure you are able to see the message on the SAP system to confirm.
 
-10. we shouuld see **Material object: Added**
+10.We should see **Material object: Added**
 
   CONGRATULATIONS. Great job you have finished the LAB successfully!
 
@@ -128,7 +129,7 @@ as the action you wanted the SAP connector to describe.
 
 ## Step 5: Problems seen from our CONA integration
 
-7. Here is my POSTMAN screen shot as output
+1. 
 
 ![App Service Basic Tab](images/Material_Not_OK.JPG)
 
