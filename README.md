@@ -138,13 +138,13 @@ Our SAP adapter describe does not catch the cardinality ( ONE TO MANY). In this 
 
 1. The XSD's does have a ArrayOf BAPISITDM
 
-![App Service Basic Tab](images/Create-Order-XML.JPG)
+![App Service Basic Tab](images/Create-Order-XSD.JPG)
 
 
 2. The XML we presented to the system has worked
 
 
-![App Service Basic Tab](images/Create-Order-XSD.JPG)
+![App Service Basic Tab](images/Create-Order-XML.JPG)
 
 
 
