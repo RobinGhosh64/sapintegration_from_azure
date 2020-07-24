@@ -134,9 +134,9 @@ Our SAP adapter describe does not catch the cardinality ( ONE TO MANY). In this 
     
 
 
-**_x002F_SCL_x002F_BAPI_SORD_CREATEFROMDAT2 ** has worked **
+**_x002F_SCL_x002F_BAPI_SORD_CREATEFROMDAT2** has worked 
 
-1. The XSD's does have a ArrayOf BAPISITDM
+1. The XSD's does show an ArrayOf BAPISITDM
 
 ![App Service Basic Tab](images/Create-Order-XSD.JPG)
 
@@ -149,11 +149,21 @@ Our SAP adapter describe does not catch the cardinality ( ONE TO MANY). In this 
 
 
 
+**_x002F_SCL_x002F_BAPI_SORD_CREATEFROMDAT2** has not worked 
 
-Apps and then create a new Logic App that will actually be calling the SAP RFC Function.
-    We do have the sample payload from the earlier steps.
 
-2. It 
 
-![App Service Basic Tab](images/Material_Not_OK.JPG)
+1. The XSD's does show an ArrayOf BAPISITDM
+
+![App Service Basic Tab](images/Create-Order-XSD.JPG)
+
+
+2. The XML we presented to the system has worked
+
+
+![App Service Basic Tab](images/Create-Order-XML.JPG)
+
+
+
+Working with internal SAP team now.
 
