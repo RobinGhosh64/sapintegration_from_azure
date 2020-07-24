@@ -68,6 +68,40 @@
 
 
 
+## Step 4: Now that we have the two XSD's, let us create a xml payload
+
+1. Please use any tool like XMLSpy or Liquid Studio
+2. Load the two files are generate the XML payload
+3. Here is my screen shot using the two xsd's
+
+
+![App_Service_Basic_Tab](images/Liquid_Select_Root_element.JPG)
+
+4. Click the **Send** button
+5. You should see schema definitions as response
+6. I have added -------- as a delimiter between the RFC xsd and the TYPES xsd. So you will need to extract them as separate files on your local system
+
+7. Here is my POSTMAN screen shot as output
+
+![App Service Basic Tab](images/Liquid_Select_Tool.JPG)
+
+5. Collect the sample xsd's from the response tab of the Postman. This is an important step. Make sure it works!!
+
+
+![App Service Basic Tab](images/Liquid_Select_Tool_1.JPG)
+
+
+
+7. Here is my POSTMAN screen shot as output
+
+![App Service Basic Tab](images/Material_Not_OK.JPG)
+
+5. Collect the sample xsd's from the response tab of the Postman. This is an important step. Make sure it works!!
+
+
+![App Service Basic Tab](images/Material_OK.JPG)
+
+
 
 ## Step 7: Our App Service has restarted. Hopefully, taken the settings update. Let's go to our Web App
 
