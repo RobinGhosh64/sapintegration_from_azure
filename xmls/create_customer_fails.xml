@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Studio 2020 (https://www.liquid-technologies.com) -->
+<_x002F_SCL_x002F_MDM_API_CREATE_CUST xmlns:ns="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/" xmlns="http://Microsoft.LobServices.Sap/2007/03/Rfc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://Microsoft.LobServices.Sap/2007/03/Rfc/ C:\Users\roghos\source\repos\ConsoleApp1\ConsoleApp1\CreateCustomer_RFC.xsd">
+    <IM_V_API_USERID>MC_MulSrv03</IM_V_API_USERID>
+    <IM_V_VKORG>4100</IM_V_VKORG>
+    <IM_V_SENDER_REQUEST_ID></IM_V_SENDER_REQUEST_ID>
+    <IM_V_CUSTOMER_DATA>    
+    <ns:KUNNR></ns:KUNNR>
+    <ns:LAND1>US</ns:LAND1>
+    <ns:NAME1>ROBIN 001</ns:NAME1>
+    <ns:NAME2>ROBIN</ns:NAME2>
+    <ns:ORT01>ATLANTA</ns:ORT01>
+    <ns:PSTLZ>30309</ns:PSTLZ>
+    <ns:REGIO>GA</ns:REGIO>
+    <ns:SORTL>SBAKI 002</ns:SORTL>
+    <ns:STRAS>10 10th st NW</ns:STRAS>
+    <ns:ANRED/>
+    <ns:AUFSD/>
+    <ns:BAHNS>99999</ns:BAHNS>
+    <ns:BBBNR>0000000</ns:BBBNR>
+    <ns:BBSNR>00000</ns:BBSNR>
+    <ns:BEGRU>4100</ns:BEGRU>
+    <ns:BRSCH>0110</ns:BRSCH>
+    <ns:BUBKZ>0</ns:BUBKZ>
+    <ns:DATLT/>
+    <ns:FAKSD/>
+    <ns:KNRZA/>
+    <ns:KTOKD>Z001</ns:KTOKD>
+    <ns:KUKLA>99</ns:KUKLA>
+    <ns:LIFSD/>
+    <ns:LOCCO/>
+    <ns:LOEVM/>
+    <ns:NAME3>ROBIN</ns:NAME3>
+    <ns:NAME4>ROBIN</ns:NAME4>
+    <ns:ORT02>FULTON</ns:ORT02>
+    <ns:PFACH/>
+    <ns:PSTL2/>
+    <ns:RPMKR/>
+    <ns:STCD1/>
+    <ns:STCD2/>
+    <ns:TELBX/>
+    <ns:LZONE>0000000001</ns:LZONE>
+    <ns:VBUND/>
+    <ns:KATR1>A</ns:KATR1>
+    <ns:KATR2>A</ns:KATR2>
+    <ns:KATR3>01</ns:KATR3>
+    <ns:KATR4>1</ns:KATR4>
+    <ns:KATR5/>
+    <ns:KATR6>1</ns:KATR6>
+    <ns:KATR7>101</ns:KATR7>
+    <ns:KATR8>1</ns:KATR8>
+    <ns:KATR9>101</ns:KATR9>
+    <ns:KATR10/>
+    <ns:TXJCD>1112100800</ns:TXJCD>
+    <ns:PFORT/>
+    <ns:KDKG2/>
+    <ns:KDKG3/>
+    <ns:CASSD/>
+    <ns:NODEL/>
+    
+    <ns:ZACN_NUM>1774791</ns:ZACN_NUM>
+    <ns:ZBARCODE/>
+    <ns:ZCRMBPRS/>
+    <ns:ZCUSTYPE/>
+    <ns:ZEQUPWNR/>
+    <ns:ZGLCUST>9999999</ns:ZGLCUST>
+ 
+    <ns:ZLQEXPDT>2020-07-04</ns:ZLQEXPDT>
+    
+    <ns:ZMERCHPC/>
+    <ns:ZMNGBY>MB410000000001</ns:ZMNGBY>
+    <ns:ZNADSNUM/>
+    <ns:ZOPMARKT/>
+    <ns:ZOWNBY>OB410000000001</ns:ZOWNBY>
+    <ns:ZPPGROUP/>
+    <ns:ZPRAGEGP/>
+    <ns:ZPRIGRP>A6921</ns:ZPRIGRP>
+
+    
+        <ns:ZPRRACE/>
+        <ns:ZPRSOCEC/>
+    
+    <ns:ZQSREC1/>
+    <ns:ZSCAGEGP/>
+    <ns:ZSCRACE/>
+    <ns:ZSCSOCEC/>
+    <ns:ZSEATP/>
+    <ns:ZSECGRP/>
+    <ns:ZSTRSTMP/>
+    <ns:ZSUPR/>
+    <ns:ZTRDNAME>10</ns:ZTRDNAME>
+    
+        <ns:_x002F_SCL_x002F_MDT_API_CUST_TELE_MOB>
+            <ns:T_COUNTRY>US</ns:T_COUNTRY>
+            <ns:T_FLGNOUS/>
+            <ns:T_FLGSMS/>
+            <ns:T_NR_CALL>1</ns:T_NR_CALL>
+            <ns:T_NR_LONG>1</ns:T_NR_LONG>
+            <ns:T_NUMBER>4045551212</ns:T_NUMBER>
+            <ns:REMARK>REM</ns:REMARK>
+            <ns:AD_CONSNO>001</ns:AD_CONSNO>
+            
+        </ns:_x002F_SCL_x002F_MDT_API_CUST_TELE_MOB>
+
+    </IM_V_CUSTOMER_DATA>
+    
+
+</_x002F_SCL_x002F_MDM_API_CREATE_CUST> 
+

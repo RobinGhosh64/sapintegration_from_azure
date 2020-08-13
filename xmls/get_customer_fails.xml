@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<_x002F_SCL_x002F_MDM_API_READ_CUST xmlns="http://Microsoft.LobServices.Sap/2007/03/Rfc/" xmlns:ns3="http://Microsoft.LobServices.Sap/2007/03/Types/Rfc/" xsi:schemaLocation="http://Microsoft.LobServices.Sap/2007/03/Rfc/schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<IM_V_API_USERID>SG_MulSrv01</IM_V_API_USERID>
+	<IM_V_KUNNR>0500058541</IM_V_KUNNR>
+	<IM_V_VKORG>4100</IM_V_VKORG>
+</_x002F_SCL_x002F_MDM_API_READ_CUST>
